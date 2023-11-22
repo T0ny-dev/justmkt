@@ -1,0 +1,84 @@
+.Form {
+  padding: 90px 54px;
+  background-image: url("https://iimgvjzkjpogzlreaoya.supabase.co/storage/v1/object/sign/justmkt/bg-just-form.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJqdXN0bWt0L2JnLWp1c3QtZm9ybS5wbmciLCJpYXQiOjE3MDA0NTA3MTUsImV4cCI6MTczMTk4NjcxNX0.WwGDqAppqeGfZQT7dLPcpBiJbN-uHgFqqS9Ai86soog&t=2023-11-20T03%3A25%3A15.816Z");
+  background-size: cover;
+  height: auto;
+}
+
+.Form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Form__title {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Form__title  h2 {
+  font-size: 36px;
+  color: #Fff;
+  margin-bottom: 5vh;
+}
+
+.Form__title  p {
+  font-size: 18px;
+  color: #Fff;
+  margin-bottom: 1vh;
+}
+
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.Form__section{
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  width: 35%;
+  height: auto;
+}
+
+
+.form__mail {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 20px;
+  height: auto;
+}
+
+.form__mail input {
+  margin-bottom: 2vh;
+  border: 1px solid #adacac;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form__mail label {
+  margin-bottom: 3vh;
+}
+
+.Form ul {
+  padding-left: 1vw;
+  color: #fff;
+}
+
+
+@media (max-width: 800px)  {
+  .call__action {
+    margin-bottom: 10vh;
+  }
+  .Form {
+    flex-direction: column;
+    gap: 10vh;
+    padding: 10vh 9vw;
+  }
+  .Form__section {
+    width: 100%;
+  }
+}

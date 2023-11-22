@@ -1,0 +1,101 @@
+
+<div class="about">
+  <div class="about__description">
+    <h2>Somos un estudio innovador ¡Potencia tu presencia en línea con nosotros!</h2>
+    <h3>Pensamos que la innovación surge al mantenernos conectados con las tendencias digitales. Nuestros principios fundamentales son:</h3>
+    <ul>
+      <li>Digitalización de Negocios</li>
+      <li>Marketing Digital</li>
+      <li>Diseño Web</li>
+      <li>Tecnología</li>
+    </ul>
+    <button class="primary__button">Contacto</button>
+  </div>
+  <div class="about__image">
+    <img src="https://iimgvjzkjpogzlreaoya.supabase.co/storage/v1/object/sign/justmkt/tech-justmkt.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJqdXN0bWt0L3RlY2gtanVzdG1rdC5wbmciLCJpYXQiOjE3MDAwOTE1OTMsImV4cCI6MTczMTYyNzU5M30.miyOgXUOS5_JQwFFYpudb04TiQLEXlQ2-f-ezraohQE&t=2023-11-15T23%3A39%3A53.280Z" alt="">
+  </div>
+</div>
+
+<style>
+
+ .about {
+  display: flex;
+  background-color: #fff;
+ }
+
+  .about__description {
+    padding: 10vh 4vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 50%;
+  }
+
+  .about__description h2 {
+    margin-bottom: 5vh;
+    font-size: 36px;
+  }
+
+  .about__description h3 {
+    margin-bottom: 5vh;
+    font-weight: 400;
+  }
+
+  .about__description ul {
+    padding-left: 5vw;
+    margin-bottom: 10vh;
+  }
+
+  .about__image {
+    padding: 10vh 4vw;
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .about__image img {
+    width: 559px;
+    height: 564px;
+  }
+
+  @media (max-width: 1115px) {
+    .about__image img {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .about {
+      flex-direction: column;
+    }
+    .about__description {
+      width: 100%;
+    }
+
+    .about__image {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .about__image img {
+      width: 100%;
+    }
+
+    .about__description h2 {
+      font-size: 28px;
+    }
+
+    .about__description h3 {
+      font-size: 16px;
+    }
+}
+
+@media (max-width: 800px) {
+  .about__image img {
+      width:350px;
+      height: 400px;
+    }
+}
+
+</style>

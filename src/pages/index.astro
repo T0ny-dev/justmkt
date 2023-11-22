@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/React/Navbar';
+import Hero from '../components/Astro/Hero.astro';
+import AboutUs from '../components/Astro/AboutUs.astro';
+import CallAction from '../components/Astro/CallAction.astro';
+import Service from '../components/Astro/Service.astro';
+import Academy from '../components/Astro/Academy.astro';
+import Form from '../components/React/Form';
+import Footer from '../components/Astro/Footer.astro';
+import Clients from '../components/Astro/Clients.astro';
+import NavbarMobile from '../components/React/NavbarMobile';
+---
+
+<Layout title="JustMKT">
+	<main>
+    <Navbar/>
+		<NavbarMobile client:load/>
+		<Hero/>
+		<AboutUs/>
+		<Clients/>
+		<CallAction/>
+		<Service/>
+		<Academy/>
+		<Form/>
+		<Footer/>
+	</main>
+</Layout>
+
+<style>
+	
+</style>

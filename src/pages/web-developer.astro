@@ -1,0 +1,73 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/React/Navbar';
+import Developstack from '../components/Astro/Stack.astro';
+import CallAction from '../components/Astro/CallAction.astro';
+import Clients from '../components/Astro/Clients.astro';
+import Footer from '../components/Astro/Footer.astro';
+import Form from '../components/React/Form';
+import NavbarMobile from '../components/React/NavbarMobile';
+---
+
+<Layout title="web-developer">
+	<main>
+    <Navbar/>
+    <NavbarMobile client:load/>
+    <div id="video-container">
+      <video id="video-background" autoplay loop muted>
+          <!-- Ruta del video -->
+          <source src="https://iimgvjzkjpogzlreaoya.supabase.co/storage/v1/object/sign/justmkt/just-developer.mp4?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJqdXN0bWt0L2p1c3QtZGV2ZWxvcGVyLm1wNCIsImlhdCI6MTcwMDQ1ODEwMCwiZXhwIjoxNzMxOTk0MTAwfQ.TTwiYO8YZQbxhHEc_EJGF7Ba8flsm2KBLaPz5KwjtGA&t=2023-11-20T05%3A28%3A20.395Z" type="video/mp4">
+          Tu navegador no soporta el tag de video.
+      </video>
+      <div id="gradient-overlay"></div>
+      <div id="content">
+          <h1>Desarrollo Web</h1>
+      </div>
+    </div>
+    <Developstack/>
+    <Clients/>
+    <CallAction/>
+    <Form/>
+    <Footer/>
+	</main>
+</Layout>
+
+<style>
+ #video-container {
+            position: relative;
+            width: 100%;
+            height: 65vh;
+            overflow: hidden;
+            z-index: -1;
+            
+        }
+
+        #video-background {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            mix-blend-mode: soft-light; /* Filtro soft light */
+        }
+
+        #gradient-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom right, rgba(54, 195, 162, 1), rgba(222, 230, 59, 1));
+            opacity: 0.70;
+        }
+
+        #content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+        }
+</style>

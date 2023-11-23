@@ -39,3 +39,17 @@
     display: none;
   }
 }
+
+
+@media (max-width:500px) {
+	.primary__button {
+		background: linear-gradient(to right, #87BD27, #DEE63B);
+		color: white; /* Color del texto, puedes ajustarlo según sea necesario */
+		padding: 10px 20px; /* Ajusta el relleno según sea necesario */
+		border: none;
+		border-radius: 5px; /* Ajusta el radio de borde según sea necesario */
+		cursor: pointer;
+		font-size: 18px;
+	}
+	
+}

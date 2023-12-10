@@ -9,8 +9,8 @@ function Navbar () {
 					</a>
 				</div>
 				<div className="navbar__links">
-					<a className="navbar__links--a" href="#">Servicios</a>
-					<a className="navbar__links--a" href="/casos-de-estudio">Casos de Estudio</a>
+					<a className="navbar__links--a" href="/precios">Precios</a>
+					<a className="navbar__links--a" href="/proyectos">Proyectos</a>
 					<a className="navbar__links--a" href="/sobre-nosotros">Sobre Nosotros</a>
 					<a className="navbar__links--a" href="/contacto">Contacto</a>
 					<a href="#">

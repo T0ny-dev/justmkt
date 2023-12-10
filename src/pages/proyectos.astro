@@ -1,12 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Navbar from '../components/React/Navbar';
+import Navbar from '../components/React/Navbar.jsx';
 import Developstack from '../components/Astro/Stack.astro';
 import CallAction from '../components/Astro/CallAction.astro';
 import Clients from '../components/Astro/Clients.astro';
 import Footer from '../components/Astro/Footer.astro';
-import Form from '../components/React/Form';
-import NavbarMobile from '../components/React/NavbarMobile';
+import Form from '../components/React/Form.jsx';
+import NavbarMobile from '../components/React/NavbarMobile.jsx';
+import ListCase from '../components/React/ListCases.jsx';
 ---
 
 <Layout title="casos-de-estudio">
@@ -15,16 +16,17 @@ import NavbarMobile from '../components/React/NavbarMobile';
     <NavbarMobile client:load/>
     <div id="video-container">
       <video id="video-background" autoplay loop muted>
-          <!-- Ruta del video -->
-          <source src="https://iimgvjzkjpogzlreaoya.supabase.co/storage/v1/object/sign/justmkt/cases.mp4?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJqdXN0bWt0L2Nhc2VzLm1wNCIsImlhdCI6MTcwMDUzODI0OSwiZXhwIjoxNzMyMDc0MjQ5fQ.fjYscNIpQPVao5Ic8GVlWDV8UDXHFmbyWnMMSgrNECU&t=2023-11-21T03%3A44%3A09.833Z" type="video/mp4">
+        <!-- Ruta del video -->
+        <source src="https://iimgvjzkjpogzlreaoya.supabase.co/storage/v1/object/sign/justmkt/code.mp4?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJqdXN0bWt0L2NvZGUubXA0IiwiaWF0IjoxNzAwNTk4MTQ1LCJleHAiOjE3MzIxMzQxNDV9.QPqVPKZQ8hYF_HdaRZDYXorT_DlwmFnZ5X5HI7qR5d4&t=2023-11-21T20%3A22%3A26.019Z" type="video/mp4">
           Tu navegador no soporta el tag de video.
       </video>
       <div id="gradient-overlay"></div>
       <div id="content">
-          <h1>Casos de estudio</h1>
+        <h1>Proyectos</h1>
       </div>
     </div>
     <Developstack/>
+		<ListCase client:load/>
     <Clients/>
     <CallAction/>
     <Form/>

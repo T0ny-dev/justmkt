@@ -24,9 +24,38 @@ import NavbarMobile from '../components/React/NavbarMobile';
           <h1>Sobre Nosotros</h1>
       </div>
     </div>
-    <AboutUs/>
-    <Clients/>
-    <CallAction/>
+    <div class="about-us">
+        <h2>Acerca de Nosotros</h2>
+        <p>Somos una empresa comprometida con la calidad y la excelencia...</p>
+    </div>
+    <div class="timeline">
+        <h2>Nuestra Historia</h2>
+        <div class="event">
+          <div class="date">2017</div>
+          <div class="description">Comenzamos nuestro viaje...</div>
+        </div>
+        <div class="event">
+          <div class="date">2019</div>
+          <div class="description">Logramos un hito importante...</div>
+        </div>
+        <!-- Agrega más eventos según sea necesario -->
+      </div>
+      <div class="team">
+        <h2>Nuestro Equipo</h2>
+        <div class="member">
+          <div class="photo">
+            <img src="miembro1.jpg" alt="Miembro 1">
+          </div>
+          <div class="name">Nombre Miembro 1</div>
+        </div>
+        <div class="member">
+          <div class="photo">
+            <img src="miembro2.jpg" alt="Miembro 2">
+          </div>
+          <div class="name">Nombre Miembro 2</div>
+        </div>
+        <!-- Agrega más miembros según sea necesario -->
+      </div>
     <Form/>
     <Footer/>
 	</main>
@@ -70,4 +99,51 @@ import NavbarMobile from '../components/React/NavbarMobile';
             text-align: center;
             color: #fff;
         }
+
+        .about-us, .timeline, .team {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  color: #555;
+}
+
+.timeline {
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.event {
+  margin-bottom: 20px;
+}
+
+.date {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.member {
+  flex: 1 1 300px;
+  margin: 10px;
+  text-align: center;
+}
+
+.photo img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
 </style>

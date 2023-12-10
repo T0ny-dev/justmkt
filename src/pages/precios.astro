@@ -1,0 +1,204 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/React/Navbar.jsx";
+import Footer from "../components/Astro/Footer.astro";
+import Form from "../components/React/Form.jsx";
+import NavbarMobile from "../components/React/NavbarMobile.jsx";
+import CallAction from "../components/Astro/CallAction.astro";
+---
+
+<Layout title="casos-de-estudio">
+  <main>
+    <Navbar />
+    <NavbarMobile client:load />
+    <div id="video-container">
+      <video id="video-background" autoplay loop muted>
+        <!-- Ruta del video -->
+        <source
+          src="https://iimgvjzkjpogzlreaoya.supabase.co/storage/v1/object/sign/justmkt/code.mp4?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJqdXN0bWt0L2NvZGUubXA0IiwiaWF0IjoxNzAwNTk4MTQ1LCJleHAiOjE3MzIxMzQxNDV9.QPqVPKZQ8hYF_HdaRZDYXorT_DlwmFnZ5X5HI7qR5d4&t=2023-11-21T20%3A22%3A26.019Z"
+          type="video/mp4"
+        />
+         Tu navegador no soporta el tag de video.
+      </video>
+      <div id="gradient-overlay"></div>
+      <div id="content">
+        <h1>Planes</h1>
+      </div>
+    </div>
+    <div>
+      <h2>Nuestros planes</h2>
+      <div class="prices">
+        <div class="prices__card">
+          <h3>Desarrollo web</h3>
+          <p class="prices__title">5,000</p>
+          <button class="prices__button">Empezar</button>
+          <hr />
+          <p>Tecnologias de siguiente generacion</p>
+          <p>Diseño web y entregables</p>
+          <p>Estrategias SEO gratis</p>
+          <p>Tajetas Digitales</p>
+          <p>Sitio web general</p>
+          <p>Correos Empresariales</p>
+          <p>Dominio y hosting incluido</p>
+        </div>
+        <div class="prices__card">
+          <h3>ADN de Marcar</h3>
+          <p class="prices__title">2,500</p>
+          <button class="prices__button">Empezar</button>
+          <hr />
+          <p>Diseño de Marca (Branding)</p>
+          <p>Tarjetas empresariales y Digitales</p>
+          <p>Paleta de colores</p>
+          <p>Estudio de caso</p>
+          <p>Logotipo y entregables</p>
+          <p>Asesoria para el registro de Marca</p>
+        </div>
+        <div class="prices__card">
+          <h3>Marketing Digital</h3>
+          <p class="prices__title">2,500</p>
+          <button class="prices__button">Empezar</button>
+          <hr />
+          <p>Analisi de SEO</p>
+          <p>Estrategia digital de marketing</p>
+          <p>Creacion de contenido para Facebook, Instagram</p>
+          <p>Videos Personalizados</p>
+          <p>Googles analitics</p>
+        </div>
+        <div class="prices__card">
+          <h3>Video Edicion</h3>
+          <p class="prices__title">5,000</p>
+          <button class="prices__button">Empezar</button>
+          <hr />
+          <p>Analisi de SEO</p>
+          <p>Estrategia digital de marketing</p>
+          <p>Creacion de contenido para Facebook, Instagram</p>
+          <p>Videos Personalizados</p>
+          <p>Googles analitics</p>
+        </div>
+      </div>
+      <CallAction/>
+    </div>
+    <Form />
+    <Footer />
+  </main>
+</Layout>
+
+<style>
+  #video-container {
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  #video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    mix-blend-mode: soft-light; /* Filtro soft light */
+  }
+
+  #gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to bottom right,
+      rgba(54, 195, 162, 1),
+      rgba(222, 230, 59, 1)
+    );
+    opacity: 0.7;
+  }
+
+  #content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10vh;
+    color:#424242
+  }
+
+  .prices {
+    display: flex;
+    padding: 10vh 4vw;
+    justify-content: space-between;
+  }
+
+  .prices__card {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 0 1px 3px #00000029;
+    padding: 5vh 2vw;
+  }
+
+  .prices__card:hover {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 1px 8px 8px #00000029;
+    padding: 5vh 2vw;
+  }
+
+  .prices__card p {
+    text-align: center;
+    margin-bottom: 2vh;
+  }
+  .prices__title {
+    font-size: 50px;
+    color: #575757;
+    margin-top: 5vh;
+    font-weight: 700;
+    margin-bottom: 5vh;
+  }
+
+  .prices__title::before {
+    content: "$";
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .prices__title::after {
+    content: "MXN";
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .prices__button {
+  background: linear-gradient(to right, #87BD27, #DEE63B);
+  color: white; /* Color del texto, puedes ajustarlo según sea necesario */
+  padding: 12px 20px; /* Ajusta el relleno según sea necesario */
+  width: 80%;
+  border: none;
+  border-radius: 50px; /* Ajusta el radio de borde según sea necesario */
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 3vh;
+  }
+
+  .prices__card hr {
+    width: 80%;
+    opacity: 15%;
+    margin-bottom: 5vh;
+  }
+
+
+</style>
